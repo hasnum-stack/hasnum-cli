@@ -15,6 +15,9 @@
     "rome": "^12.1.0"
   },
   "lint-staged": {
-    "*.{js?(x),css,md}": "prettier --no-error-on-unmatched-pattern --cache --write"
+    "*.{js?(x),css,md}": "prettier --no-error-on-unmatched-pattern --cache --write",
+    "*.ts?(x)": [
+      "prettier --no-error-on-unmatched-pattern --cache --parser=typescript --write"
+    ]
   }
 }
